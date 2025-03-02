@@ -1,0 +1,30 @@
+
+comandos do usuraio;
+input name = nome;
+input sobrenome = sobrenome;
+input peso = peso;
+input altura = altura;
+
+btn = enviar;
+
+console.log([{...},{...}])
+{
+    nome: 'joao',
+    sobrenome: 'silva',
+    peso: '123',
+    altura: 1.48
+},{
+    ...
+},{
+    ...
+}
+
+==================================================
+parte logica;
+
+seleciona os nomes;
+elas devem ser atribuida a uma funcao ao qual sera adicionada dentro do objeto;
+quando clicar vai add no array dentro do objeto;
+
+click1 => seleciona valores => add array > objeto => console.log(array);
+click2 => seleciona valores => add array nova posicao > objeto => console.log(array)

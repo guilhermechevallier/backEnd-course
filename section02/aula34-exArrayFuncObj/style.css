@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-tela{
+    width: 95%;
+    margin: 0 auto;
+}
+fieldset{
+    text-align: start;
+    padding: 10px 30px;
+    width: 300px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+fieldset legend{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+#form1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#form1 .item-form{
+    padding: 11px 5px;
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"], input[type="number"]{
+    width: 200px;
+    height: 30px;
+    text-indent: 10px;
+}
+button{
+    padding: 10px 25px;
+    border: none;
+    background-color: #7f69fc;
+    border-radius: .5rem;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .3s;
+}
+button:hover{
+    background: #6b51fe;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.404);
+}
