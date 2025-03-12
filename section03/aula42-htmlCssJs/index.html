@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelo</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="main-tela">
+        <main>
+            <section class="sec1">
+                <h1>Calculo de IMC</h1>
+                
+                <div class="infor">
+                    <div class="infor-item">
+                        <h2>IMC</h2>
+                        <ul>
+                            <li>Menos que 18,5</li>
+                            <li>Entre 18,5 e 24,8</li>
+                            <li>Entre 25 e 29,9</li>
+                            <li>Entre 30 e 34,9</li>
+                            <li>Entre 35 e 39,9</li>
+                            <li>Mais do que 40</li>
+                        </ul>
+                    </div>
+                    <div class="infor-item">
+                        <h2>Resultado</h2>
+                        <ul>
+                            <li>Abaixo do peso</li>
+                            <li>Peso normal</li>
+                            <li>Sobrepeso</li>
+                            <li>Obesidade grau 1</li>
+                            <li>Obesidade grau 2</li>
+                            <li>Obesidade grau 3</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </section>
+            <section class="sec2">
+                <form action="#" id="form1" method="post">
+                    <div class="item-data">
+                        <label for="peso">
+                            <input type="number" name="peso" id="peso" placeholder="Peso 70.00kg" step="0.01" min="10" max="600">
+                        </label>
+                    </div>
+                    <div class="item-data">
+                        <label for="altura">
+                            <input type="number" name="altura" id="altura" placeholder="Altura 1.70m" step="0.01" min="1" max="4">
+                        </label>
+                    </div>
+                    <div class="item-data">
+                        <button type="submit" id="enviar">Enviar</button>
+                    </div>
+                    <div class="item-data">
+                        <button type="button" id="limp">Limpar</button>
+                    </div>
+                </form>
+                <p id="result">...</p>
+            </section>
+        </main>
+        <footer>
+            <p>
+                feito por <span>Guilherme Chevallier</span>
+            </p>
+        </footer>
+    </div>
+
+
+
+    <script src="src/script.js"></script>
+</body>
+</html>
