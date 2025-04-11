@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>retorno de paisagem ou retrato</title>
+</head>
+<body>
+    <main class="tela">
+        <h1>Leitura do ficheiro</h1>
+
+        <form action="#" id="form1">
+            <label for="archive">Leitura do ficheiro: </label>
+            <input type="file" name="archive" id="archive" value="Fazer upload" accept="image/png, image/jpeg, image/jpg">
+
+        </form>
+        <img id="imagemPreview" src="" alt="Prévia da imagem" style="max-width: 300px; display: none;">
+    </main>
+
+    <script>
+        const form = document.querySelector('#form1');
+        const eFile = form.querySelector('#archive');
+        const imagemPreview = document.getElementById('imagemPreview');
+        
+        eFile.addEventListener('change', function(){
+            const arq = this.files[0];
+            console.log('true', this.files[0]);
+            if(arq){
+                const leitor = new FileReader();
+                
+                leitor.addEventListener('load', function(){
+                    imagemPreview.setAttribute('src', this.result);
+                    imagemPreview.style.display = 'block';
+                })
+                
+                leitor.readAsDataURL(arq);
+            }
+        });
+
+        // elemFile = form.querySelector('#archive');
+        // console.log(elemFile);
+        
+        // elemFile.addEventListener("cancel", () => {
+        //     console.log("Cancelled.");
+        // });
+        
+        // elemFile.addEventListener("change", () => {
+        //     if (elemFile.files.length == 1) {
+        //         console.log("File selected: ", elemFile.files[0]);
+        // });
+        // elemFile.click();
+        </script>
+</body>
+</html>
