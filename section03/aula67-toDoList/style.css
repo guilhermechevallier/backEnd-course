@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    width: 600px;
+    border: 2px solid #000000;
+    box-shadow: 3px 3px 0px #111111;
+    margin-top: 50px;
+    padding: 20px;
+}
+.form1{
+    margin: 20px 0;
+}
+.form1 input[type="text"]{
+    width: 350px;
+    padding: 10px;
+}
+.btnConfirm{
+    padding: 10px 20px;
+    background-color: #40ae67;
+    cursor: pointer;
+}
+
+.task{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.task div{
+    margin: 5px 0px;
+}
+.task input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.finalizado{
+    text-decoration: line-through;
+}
+
+.task label{
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 5px;
+}
