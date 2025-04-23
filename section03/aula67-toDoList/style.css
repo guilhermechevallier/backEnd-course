@@ -31,6 +31,15 @@ body{
     background-color: #40ae67;
     cursor: pointer;
 }
+.btnConfirm:hover{
+    background-color: #2ec463;
+    transition: 0.3s;
+    transform: translateY(-2px);
+}
+.btnConfirm:active{
+    transform: translateY(10px);
+    background-color: #40ae67;
+}
 
 .task{
     margin-left: 20px;
@@ -54,5 +63,23 @@ body{
 .task label{
     cursor: pointer;
     font-size: 20px;
-    margin-left: 5px;
+    margin: 0px 5px;
+}
+
+.apagar{
+    padding: 5px 10px;
+    border: 1px solid #000000;
+    box-shadow: 1px 1px 0px #111111;
+    background-color: #ff6f59;
+    color: #fff;
+    cursor: pointer;
+}
+.apagar:hover{
+    background-color: #ff3f3f;
+    transition: 0.3s;
+    transform: translateY(-2px);
+}
+.apagar:active{
+    transform: translateY(19px);
+    background-color: #ff6f59;
 }

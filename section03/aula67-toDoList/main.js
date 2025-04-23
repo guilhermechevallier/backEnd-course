@@ -1,4 +1,7 @@
 document.addEventListener('click', function(e){
+    const task = document.querySelector('.task');
+    const taskker = task.getElementsByTagName('label');
+
     if (e.target.classList.contains('btnConfirm')) {
         const task = document.querySelector('.task');
         const taskker = task.getElementsByTagName('label');
@@ -12,6 +15,13 @@ document.addEventListener('click', function(e){
             const iTask = index + 1;
             task.appendChild(appendTask(task, answerSearch, iTask));
         }
+        saveTask(taskker);
+
+    }
+    if (e.target.classList.contains('apagar')){
+        //task.removeChild(e.target.parentNode); remove the task;
+        task.removeChild(e.target.parentNode);
+        saveTask(taskker);
     }
 });
 const appendTask = (task, answerSearch,iTask) => {
@@ -25,7 +35,27 @@ const appendTask = (task, answerSearch,iTask) => {
     label.setAttribute('for', `tarefa${iTask}`);
     label.innerText = answerSearch;
 
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.classList.add('apagar');
+    btn.innerText = 'x';
+
     div.appendChild(input);
     div.appendChild(label);
+    div.appendChild(btn);
     return task.appendChild(div);
+}
+
+const saveTask = (taskker) => {
+    const save = [];
+    if (taskker.length >= 0) {
+        for (let i = 0; i < taskker.length; i++) {
+            save.push(taskker[i].innerText);
+        }
+    }
+    //convert to JSON;
+    const tarefasJSON = JSON.stringify(save);
+    console.log(tarefasJSON);
+    //Save to localStorage;
+    localStorage.setItem('tarefas', tarefasJSON);
 }
