@@ -4,7 +4,7 @@
     $cpf = "123.456.789-00";
     
     echo "$nome";
-    printf "$nome"."$idade;
+    echo $nome.$idade;
     
     
     #Estrutura de controle
@@ -18,7 +18,7 @@
     #Estrutura de repetição
     
     for ($i = 0; $i <= $idade; $i++) {
-        echo "$i, ";
+        echo "$i";
     }
         
 ?>

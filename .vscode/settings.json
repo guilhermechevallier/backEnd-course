@@ -1,4 +1,20 @@
 {
     "editor.suggest.preview": true,
-    "editor.suggest.shareSuggestSelections": true
+    "editor.suggest.shareSuggestSelections": true,
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "guilherme_silva",
+            "database": "topico1",
+            "username": "root",
+            "password": ""
+        }
+    ]
 }
