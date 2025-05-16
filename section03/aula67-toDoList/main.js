@@ -1,6 +1,7 @@
 document.addEventListener('click', function(e){
     const task = document.querySelector('.task');
     const taskker = task.getElementsByTagName('label');
+    console.log(e.target);
 
     if (e.target.classList.contains('btnConfirm')) {
         const task = document.querySelector('.task');
@@ -46,6 +47,7 @@ const appendTask = (task, answerSearch,iTask) => {
     return task.appendChild(div);
 }
 
+//salvar no banco do servidor web;
 const saveTask = (taskker) => {
     const save = [];
     if (taskker.length >= 0) {
