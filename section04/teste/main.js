@@ -1,10 +1,17 @@
-const say = new Map();
+// const numero = Number(prompt("Digite um número: "));
 
-say.set("dog", "woof");
-say.set("cat", "meow");
+// console.log(numero);
 
-for (const [key] of say){
-    console.log(`${key} goes ${key}`);
+// const numeroTitu = document.querySelector('#texto1');
+// const number2 = document.querySelector('#texto2');
+
+// numeroTitu.innerHTML = numero;
+// number2.innerHTML = `<p> seu numero: ${numero}</p>`;
+
+const alunos = ["João", "Maria", "José", "Ana", "Pedro"];
+
+for (let i = 0; i < alunos.length; i++) {
+    if (alunos[i] === "Pedro"){
+        console.log(alunos[i], "posicao do array: " + i );
+    }
 }
-
-console.log(say.get("dog"));

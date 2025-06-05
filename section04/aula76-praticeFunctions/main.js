@@ -87,3 +87,6 @@ const calc = calculadora();
 calc.inicia();
 console.log(calc.display);
 
+
+//CRIANDO UM OBJETO COM FUNCAO CONSTRUTORA;
+
